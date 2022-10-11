@@ -1,0 +1,445 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="717.6,3177.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="84">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
+      <x:String>UiPath.Mail.Exchange</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="708.8,5173.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Kriterler" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="mahalle" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtReport" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Kiralik" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Satilik" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[dt_Kriterler]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="667.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Kriterler" WorkbookPath="C:\Users\zeyne\Downloads\örnek excel.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadRange>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Browser Chrome: Konut Fiyatları ve Emlak İlanları sahibinden.com'da" sap:VirtualizedContainerService.HintSize="667.2,2029.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="8c1f6ede-4fdc-42dd-bb56-49504888e060" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Kriterler]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="633.6,1812.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="600,1695.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="emlakDurumu" />
+                    <Variable x:TypeArguments="x:String" Name="konuttipi" />
+                    <Variable x:TypeArguments="x:String" Name="il" />
+                    <Variable x:TypeArguments="x:String" Name="ilce" />
+                    <Variable x:TypeArguments="x:String" Name="minfiyat" />
+                    <Variable x:TypeArguments="x:String" Name="maxfiyat" />
+                    <Variable x:TypeArguments="x:String" Name="urlString" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="558.4,256.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                    <ui:MultipleAssign.AssignOperations>
+                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[emlakDurumu]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString.ToLower]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[konuttipi]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(3).ToString.ToLower]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[il]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString.ToLower]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[ilce]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString.ToLower]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[minfiyat]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(4).ToString]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                          <ui:AssignOperation.To>
+                            <OutArgument x:TypeArguments="x:String">[maxfiyat]</OutArgument>
+                          </ui:AssignOperation.To>
+                          <ui:AssignOperation.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow(5).ToString]</InArgument>
+                          </ui:AssignOperation.Value>
+                        </ui:AssignOperation>
+                      </scg:List>
+                    </ui:MultipleAssign.AssignOperations>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MultipleAssign>
+                  <Assign sap:VirtualizedContainerService.HintSize="558.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[urlString]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["https://www.sahibinden.com/" +emlakDurumu + "-" +konuttipi + "/" +il +"-" + ilce + "?price_min=" + minfiyat + "&amp;price_max=" + maxfiyat]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="558.4,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[urlString]" Version="V1" />
+                  <uix:NExtractData ContinueOnError="False" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Başlığı' ReferenceIdx='1' Name='İlan Başlığı' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='m² (Brüt)' ReferenceIdx='2' Name='m² (Brüt)'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Oda Sayısı' ReferenceIdx='3' Name='Oda Sayısı' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Fiyat' ReferenceIdx='4' Name='Fiyat'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='İlan Tarihi' ReferenceIdx='5' Name='İlan Tarihi'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Semt / Mahalle' ReferenceIdx='6' Name='Semt / Mahalle'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-7' ReferenceIdx='7' Name='Column-7' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='İlan Başlığı' attr='text' /&gt;&lt;column name='m² (Brüt)' attr='text' /&gt;&lt;column name='Oda Sayısı' attr='text' /&gt;&lt;column name='Fiyat' attr='text' /&gt;&lt;column name='İlan Tarihi' attr='text' /&gt;&lt;column name='Semt / Mahalle' attr='text' /&gt;&lt;column name='Column-7' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="558.4,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" InteractionMode="HardwareEvents" LimitExtractionTo="Page" MaximumResults="5" ScopeIdentifier="8c1f6ede-4fdc-42dd-bb56-49504888e060" Version="V1">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://www.sahibinden.com/satilik-daire/istanbul-atasehir?price_min=1000000&amp;price_max=5000000" DesignTimeRectangle="1397, 776, 105, 38" ElementType="Text" FriendlyName="'Sonraki'" FullSelectorArgument="&lt;webctrl aaname='Sonraki ' parentid='searchResultsSearchForm' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sonraki ' parentid='searchResultsSearchForm' tag='A' type='' class='prevNextBut' check:innerText='Sonraki' /&gt;" Guid="36148aa4-4a3c-415e-86a1-a078d0c0279f" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="510, 576, 1168, 2564" FriendlyName="'İlan Başlığı m² (Brüt)'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="878770f8-5106-4880-87db-c2f778622713" InformativeScreenshot="0839f5a1aef466e470d7671821797710.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ataşehir Satılık Daire İlanları ve Satılık Ev Fiyatları - sahibinden.com' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <If Condition="[ExtractDataTable.Columns.Contains(&quot;emlakDurumu&quot;) = False]" sap:VirtualizedContainerService.HintSize="558.4,378.4" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="emlakDurumu" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="558.4,464" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,346.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;emlakDurumu&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="483.2,252" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If.Then>
+                              <Assign sap:VirtualizedContainerService.HintSize="262.4,61.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("emlakDurumu")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[emlakDurumu]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFoSURBVDhPzZLPK8NhHMffY1v23Y0DRaO42PgTZNHKSeJA4WC1VvJ3uEgOak6Ui+Li4CSuXGhCIaIpKWO2pNj8ePs8nq3vnn13c3F41ef77v19P5/P53nAHPgX/mHAxxO4tAAORMBQEOzuAkeGwK0N01fCDMiC0UkRAbY0g/EoODEG+v1aW5wr8xYxAt7SoNutzdubtq5O72gHe3tsrYQZ8AB6vTqgPwzu78pIGfOHShw7SMj8vjodorAsMCwnz8+CL3emV+EIUGRS4NoKOBMHg512WEjqdxmz3GsEvN6Dl0nw5kS+ZaElfX3VDtnbsXWFEXB2oE0eD3h9bOvnRV1xcWjrCscI46Pa2FAPxqbA6RjY1Ki14UHTq3AEfD6Dywn9kNoCNWwNuBjp08styCOr9DsCvmX27K1bRrB4dSQkLaZOfbKfWsNXwtmB3Hs+7WLh0fVbq3eQl1ppX9Jdpb9qB4pqWqXOHPgDQVWVpP7UdckAAAAASUVORK5CYII=" InformativeScreenshot="fb21e0fa941f7e1b655732f004f39ade.png" Selector="&lt;html app='chrome.exe' url='https://www.sahibinden.com/*' /&gt;" Url="https://www.sahibinden.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="667.2,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[ExtractDataTable]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="667.2,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[ExtractDataTable]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["tıklayın"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="667.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sonuçlar" WorkbookPath="C:\Users\zeyne\Downloads\örnek excel.xlsx" />
+    <Sequence sap:VirtualizedContainerService.HintSize="667.2,1596" sap2010:WorkflowViewState.IdRef="Sequence_26">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="dt_Kiralik" sap:VirtualizedContainerService.HintSize="475.2,747.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter emlakDurumu = kiralik " DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="433.6,193.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[dt_Kiralik]" SelectColumnsMode="Keep">
+          <ui:FilterDataTable.Filters>
+            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                <ui:FilterOperationArgument.Column>
+                  <InArgument x:TypeArguments="x:String">["emlakDurumu"]</InArgument>
+                </ui:FilterOperationArgument.Column>
+                <ui:FilterOperationArgument.Operand>
+                  <InArgument x:TypeArguments="x:String">["kiralik"]</InArgument>
+                </ui:FilterOperationArgument.Operand>
+              </ui:FilterOperationArgument>
+            </scg:List>
+          </ui:FilterDataTable.Filters>
+          <ui:FilterDataTable.SelectColumns>
+            <scg:List x:TypeArguments="InArgument" Capacity="4">
+              <x:Null />
+            </scg:List>
+          </ui:FilterDataTable.SelectColumns>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:FilterDataTable>
+        <ui:BuildDataTable DataTable="[dtReport]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Mahalle&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Fiyat&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Konut_x0020_Adeti&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtSource.AsEnumerable().GroupBy(&#xA;                                                                    Function(g) New With {Key .Names = g(&quot;Semt / Mahalle&quot;) }&#xA;                                                                   ).Select(&#xA;                                                                                    Function(s) New With {&#xA;                                                                                                                            .Names = s.Key.Names.ToString,                                                                                         &#xA;                                                                                                                            .Average = s.AsEnumerable().Select(Function(n) Decimal.Parse(n.Field(Of String)(&quot;Fiyat&quot;).Replace(&quot;.&quot;, String.Empty).Replace(&quot; TL&quot;, String.Empty))).ToList().Average,&#xA;                                                                                                                            .Count = s.AsEnumerable().Count.ToString&#xA;                                                                                                                        }&#xA;                                                                            ).ToList.ForEach(&#xA;                                                                                                        Sub(r) dtPivot.Rows.Add(r.Names,r.Average,r.Count)&#xA;                                                                                                         )&#xA;&#xA;" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dtSource">
+              <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dt_Kiralik" />
+            </InArgument>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dtPivot">
+              <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtReport" />
+            </InArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtReport]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Rapor Kiralik" WorkbookPath="C:\Users\zeyne\Downloads\örnek excel.xlsx" />
+      </Sequence>
+      <Sequence DisplayName="dt_Satilik" sap:VirtualizedContainerService.HintSize="475.2,716" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="433.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" OutputDataTable="[dt_Satilik]" SelectColumnsMode="Keep">
+          <ui:FilterDataTable.Filters>
+            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                <ui:FilterOperationArgument.Column>
+                  <InArgument x:TypeArguments="x:String">["emlakDurumu"]</InArgument>
+                </ui:FilterOperationArgument.Column>
+                <ui:FilterOperationArgument.Operand>
+                  <InArgument x:TypeArguments="x:String">["satilik"]</InArgument>
+                </ui:FilterOperationArgument.Operand>
+              </ui:FilterOperationArgument>
+            </scg:List>
+          </ui:FilterDataTable.Filters>
+          <ui:FilterDataTable.SelectColumns>
+            <scg:List x:TypeArguments="InArgument" Capacity="4">
+              <x:Null />
+            </scg:List>
+          </ui:FilterDataTable.SelectColumns>
+        </ui:FilterDataTable>
+        <ui:BuildDataTable DataTable="[dtReport]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Mahalle&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Fiyat&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Konut_x0020_Adeti&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtSource.AsEnumerable().GroupBy(&#xA;                                                                    Function(g) New With {Key .Names = g(&quot;Semt / Mahalle&quot;) }&#xA;                                                                   ).Select(&#xA;                                                                                    Function(s) New With {&#xA;                                                                                                                            .Names = s.Key.Names.ToString,                                                                                         &#xA;                                                                                                                            .Average = s.AsEnumerable().Select(Function(n) Decimal.Parse(n.Field(Of String)(&quot;Fiyat&quot;).Replace(&quot;.&quot;, String.Empty).Replace(&quot; TL&quot;, String.Empty))).ToList().Average,&#xA;                                                                                                                            .Count = s.AsEnumerable().Count.ToString&#xA;                                                                                                                        }&#xA;                                                                            ).ToList.ForEach(&#xA;                                                                                                        Sub(r) dtPivot.Rows.Add(r.Names,r.Average,r.Count)&#xA;                                                                                                         )&#xA;&#xA;" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dtSource">
+              <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dt_Satilik" />
+            </InArgument>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dtPivot">
+              <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtReport" />
+            </InArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtReport]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Rapor Satilik" WorkbookPath="C:\Users\zeyne\Downloads\örnek excel.xlsx" />
+      </Sequence>
+    </Sequence>
+    <umab:SendMailX Account="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Cc="isil.boyuk@nttdata.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="667.2,397.6" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="sahibinden.com çıktısı" To="can.ersoy@nttdata.com" UseDocumentAsBody="False">
+      <umab:SendMailX.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">C:\Users\zeyne\Downloads\örnek excel.xlsx</InArgument>
+        </scg:List>
+      </umab:SendMailX.Files>
+      <umab:SendMailX.HtmlBodyFromFile>
+        <umabh:HtmlContentArgument FilePath=".data/HtmlContent0.html">
+          <umabh:HtmlContentArgument.RuntimeImages>
+            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+          </umabh:HtmlContentArgument.RuntimeImages>
+          <umabh:HtmlContentArgument.ValueMappings>
+            <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+          </umabh:HtmlContentArgument.ValueMappings>
+        </umabh:HtmlContentArgument>
+      </umab:SendMailX.HtmlBodyFromFile>
+    </umab:SendMailX>
+    <ui:SendExchangeMail ApplicationId="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" DirectoryId="{x:Null}" Domain="{x:Null}" EmailAutodiscover="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" Subject="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" User="{x:Null}" AuthenticationMode="UserNameAndPassword" DisplayName="Send Exchange Mail Message" ExchangeVersion="Exchange2007_SP1" sap:VirtualizedContainerService.HintSize="667.2,146.4" sap2010:WorkflowViewState.IdRef="SendExchangeMail_1" IsBodyHtml="False" IsDraft="False" SaveCopy="False" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="667.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+  </Sequence>
+</Activity>
